@@ -2,19 +2,13 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
 
-    try {
-        val s: String? = null
-        val a = 10/0
+    val str: String? = null
 
-        println(s!!.length)
-    } catch (e: NullPointerException) {
-        println("Variavel nula!")
-    } catch (e: ArithmeticException) {
-        println("Impossivel dividir por zero!")
-    } finally {
-        println("Finally!")
-    }
+    /*if (str == null) {
+        println("nulo")
+    } else {
+        println(str)
+    }*/
 
-    println("Fim!")
-
+    println(str ?: "nulo")
 }
