@@ -4,11 +4,14 @@ fun main() {
 
     val str: String? = null
 
-    /*if (str == null) {
-        println("nulo")
-    } else {
-        println(str)
-    }*/
+    if (str != null) {
+        str.lowercase()
+        str.length
+    }
 
-    println(str ?: "nulo")
+
+    str?.let {
+        it.lowercase()
+        it.length
+    }
 }
